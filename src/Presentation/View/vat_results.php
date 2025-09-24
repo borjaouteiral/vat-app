@@ -38,7 +38,7 @@
                                         <li class="duplicate" title="duplicate">👁️ <?= !empty($result->corrected) ? htmlspecialchars($result->corrected) : htmlspecialchars($result->original) ?></li>
                                     <?php endif; ?>
                                     <?php if ($result->status === 'replace'): ?>
-                                        <li classe="replace" title="replace">⚠️ <?= !empty($result->corrected) ? htmlspecialchars($result->corrected) : htmlspecialchars($result->original) ?></li>
+                                        <li class="valid" title="replace">⚠️ <?= !empty($result->corrected) ? htmlspecialchars($result->corrected) : htmlspecialchars($result->original) ?></li>
                                     <?php endif; ?>
                                 <?php endforeach; ?>
                             

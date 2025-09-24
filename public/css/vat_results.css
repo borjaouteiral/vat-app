@@ -168,19 +168,19 @@ li.duplicate {
 
 /* Colors by type */
 .icon-valid .icon {
-    color: #28a745; /* Verde */
+    color: #28a745;
 }
 
 .icon-duplicate .icon {
-    color: #007bff; /* Azul */
+    color: #007bff;
 }
 
 .icon-replace .icon {
-    color: #ffc107; /* Amarillo */
+    color: #ffc107;
 }
 
 .icon-invalid .icon {
-    color: #dc3545; /* Rojo */
+    color: #dc3545; 
 }
 
 /* Responsive: columns stack on small screens */
