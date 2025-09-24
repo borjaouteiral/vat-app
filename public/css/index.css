@@ -1,0 +1,136 @@
+.vat-actions {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    max-width: 700px;
+}
+
+.vat-actions form,
+.manual-validation {
+    margin-bottom: 15px;
+}
+
+.vat-actions label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.vat-actions input[type="text"],
+.vat-actions input[type="file"] {
+    padding: 6px 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.vat-actions button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.vat-actions button:hover {
+    background-color: #0056b3;
+}
+
+#manualVatResult {
+    font-weight: bold;
+}
+
+
+.manual-validation > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.manual-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.manual-input label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.manual-input input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.manual-buttons {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.manual-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+}
+
+.manual-buttons button:hover {
+    background-color: #0056b3;
+}
+
+
+.alert {
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+
+@media (max-width: 600px) {
+    .manual-validation > div:nth-child(1) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .manual-buttons {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .manual-buttons button {
+        flex: 1;
+    }
+}

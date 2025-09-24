@@ -1,0 +1,24 @@
+{
+    "name": "vat-app/hexagonal",
+    "description": "Hexagonal architecture for Italian VAT processing.",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "php scripts/setup_database.php"
+        ]
+    }
+}
